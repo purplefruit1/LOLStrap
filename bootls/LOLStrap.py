@@ -92,8 +92,8 @@ def remls():
     if os.path.exists(path+"\\boot.config"):
         #os.remove(path+"\\boot.config")
         bootconf = cpath+"\\CONFIG_file_BACKUP\\boot.config"
-        bootlsFOLD = cpath
-        LOLDATFOLD = path
+        bootlsFOLD = cpath+"\\boot.config"
+        LOLDATFOLD = path+"\\boot.config"
         clone_file(bootconf, bootlsFOLD)
         clone_file(bootconf, LOLDATFOLD)
     else:
